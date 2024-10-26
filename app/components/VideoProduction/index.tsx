@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import CustomAccordion from "../CustomAccordion";
 
-const AccordionData = [
+const accordionData = [
   {
     title: "영상 유형 선택",
     content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -55,7 +55,7 @@ const VideoProduction: React.FC = () => {
         </p>
 
         <div className="flex flex-col gap-4 w-full">
-          {AccordionData.map((item, index) => (
+          {accordionData.map((item, index) => (
             <CustomAccordion
               key={index}
               title={item.title}
